@@ -32,8 +32,13 @@ when declaring a variable, its type must be stated .
 ```c
 // In the case of an integer:
 int counter = 0;
+//Placeholder is %i
 // In the case of a string:
 string answer = get_string("What's your name? ");
+//Placeholder is %s
+// In the case of a float:
+float z =
+//Placeholder is %f (%.xf can be used to decide the number of decimal places)
 ```
 
 ### Logical Operators
@@ -44,6 +49,15 @@ string answer = get_string("What's your name? ");
 ||
 //AND
 &&
+```
+
+### Avoid truncation (type casting)
+If you divide an int by an int, you will get an int. NO MATTER WHAT.
+For this reason, when dividing two numbers, say 1 divided by 3, we will get zero. 
+To avoid truncation in this case, both 1 and 3 must be declared as `float`
+
+```c
+float z = (float) x / (float) y
 ```
 
 ## Loops
