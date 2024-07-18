@@ -1,7 +1,7 @@
 # C-notes
 These are notes taken alongside CS50 week 1's lecture
 
-## Format Rules
+## Format
 
 The main body of code should fall inside:
 ```c
@@ -57,6 +57,19 @@ float z =
 If you divide an int by an int, you will get an int. NO MATTER WHAT.
 For this reason, when dividing two numbers, say 1 divided by 3, we will get zero. 
 To avoid truncation in this case, both 1 and 3 must be declared as `float`
+
+We can also use an alternative method:
+```c
+int main(void)
+{
+  int score1 = 72;
+  int score2 = 73;
+  int score3 = 33;
+
+  printf("Average: %f\n", (score1 + score2 + score3) / 3.0);
+}
+```
+By adding the `.0` at the end of the last integer, we will get a `float` result.
 
 ```c
 float z = (float) x / (float) y
