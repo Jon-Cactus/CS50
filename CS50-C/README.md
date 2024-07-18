@@ -12,7 +12,7 @@ int main(void)
 ```
 `int main(void)` should be as high up in the code as possible.
 
-Any functions should have their top line copy-pasted above the `int main(void)`. This will be enough to call the function later in the code, even though the function itself is defined below.
+Any functions should have their top line copy-pasted above the `int main(void)`. This is called a "prototype" and  will be enough to call the function later in the code, even though the function itself is defined below.
 
 ### Functions
 
@@ -23,6 +23,8 @@ int add(int a , int b)
   return x + y;
 }
 ```
+
+Why does the main body of code appear as a function? Well, it technically is, it just doesn't return anything at the end (hence the `void`).
 
 ## General Syntax Rules
 
@@ -78,3 +80,13 @@ for (int i = 0; i < 3; i++)
   printf("meow\n")
 }
 ```
+## Data Sizes
+
+```
+bool 1 byte
+int 4 bytes
+long 8 bytes
+float 4 bytes
+double 8 bytes
+char 1 byte
+string ? bytes
