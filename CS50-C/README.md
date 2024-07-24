@@ -1,5 +1,4 @@
-# C-notes
-These are notes taken alongside CS50 week 1's lecture
+# CS50 - Week 1 Notes
 
 ## Format
 
