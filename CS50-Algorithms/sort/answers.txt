@@ -1,0 +1,42 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Knowing that Bubble Sort's upper bound is n^2, and lower bound is n, we should observe the run times of the worst case scenario using random50000.txt, and the best case scenario using sorted50000.txt.
+This logic tracks, as the run times of sort1 on random50000.txt were nearly 6 seconds, and the run times of sort1 on sorted50000.txt were very fast at around 0.6 seconds.
+
+random5000 = .062 to .126s
+reversed5000 = .069s to .113s
+sorted5000 = .032s to .060s
+
+random50000 = 5.75s to 5.9s
+reversed50000 = 5.00s to 5.24s
+sorted500000 = .522s to .727s
+
+sort2 uses: Merge Sort
+
+How do you know?: The completion time is evenly distributed and fast.
+I recall that Merge Sort's best case scenario (Omega) and worst case scenario (O) are not only the same, but the fastest of the three at (n log n),
+This logic tracks - when I tested sort2 against the largest set of lists (random50000.txt, reversed50000.txt, and sorted50000.txt) they all fall within the same range of run times,
+and significantly faster than either sort1 or sort2.
+
+
+random5000 = .029s to .119s
+reversed5000 = .037s to .138s
+sorted5000 = .032s to .082s
+
+random50000 = .520s to .827s
+reversed50000 = .636s to .810s
+sorted50000 = .582s to .709s
+
+
+sort3 uses: Selection Sort
+
+How do you know?: Knowing that the worst case scenario and best case scenario for Selection Sort are the same at n^2, the run times should not vary much between the best case (sorted50000.txt), and the worst
+case scenario (random50000.txt). This logic tracks, as the run times for sort3 on sorted50000 and random50000 were both around 2.5 seconds.
+
+random5000 = .046s to .083s
+reversed5000 = .046s to .059s
+sorted5000 = .046s to .052s
+
+random50000 = 2.47s to 2.61s
+reversed50000 = 2.64s to 2.73s
+sorted50000 = 2.51s to 2.56s
